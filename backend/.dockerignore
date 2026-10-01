@@ -1,0 +1,36 @@
+# VCS
+.git
+.gitignore
+
+# Python caches
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.mypy_cache/
+.pytest_cache/
+
+# Envs and secrets
+.env
+.env.*
+.envrc
+venv/
+
+# Build artifacts
+build/
+dist/
+htmlcov/
+.coverage
+
+# Logs
+*.log
+
+# Editors/OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Others
+node_modules/
+.cache/
