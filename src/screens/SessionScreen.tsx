@@ -22,8 +22,12 @@ const SessionScreen = ({ navigation }: Props) => {
           key={module.id}
           style={styles.card}
           onPress={() => {
-            // Navegar al módulo específico cuando esté implementado
-            console.log(`Iniciando módulo: ${module.title}`);
+            if (module.title === 'Listening') {
+              navigation.navigate('Listening');
+            } else {
+              // Navegar a otros módulos cuando estén implementados
+              console.log(`Iniciando módulo: ${module.title}`);
+            }
           }}
         >
           <Text style={styles.cardTitle}>{module.title}</Text>

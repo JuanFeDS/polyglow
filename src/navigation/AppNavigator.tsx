@@ -6,12 +6,14 @@ import HomeScreen from '@/screens/HomeScreen';
 import SessionScreen from '@/screens/SessionScreen';
 import ProgressScreen from '@/screens/ProgressScreen';
 import PlanScreen from '@/screens/PlanScreen';
+import { ListeningScreen } from '@/screens/ListeningScreen';
 
 export type RootStackParamList = {
   Home: undefined;
   Session: undefined;
   Progress: undefined;
   Plan: undefined;
+  Listening: undefined;
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
@@ -48,6 +50,17 @@ const AppNavigator = () => {
         name="Plan" 
         component={PlanScreen} 
         options={{ title: 'Plan del día' }} 
+      />
+      <Stack.Screen 
+        name="Listening" 
+        component={ListeningScreen} 
+        options={{ 
+          title: 'Listening Practice',
+          headerStyle: {
+            backgroundColor: '#3B82F6',
+          },
+          headerTintColor: '#fff',
+        }} 
       />
     </Stack.Navigator>
   );
