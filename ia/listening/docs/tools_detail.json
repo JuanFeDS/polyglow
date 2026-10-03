@@ -1,0 +1,115 @@
+{
+    "modulo": "Listening",
+    "funcionalidades": [
+      {
+        "id": "3.1",
+        "nombre": "Ejercicios de Audio con Preguntas de Comprensión",
+        "descripcion": "Generación de audios adaptados al nivel del usuario con preguntas posteriores para evaluar la comprensión.",
+        "detalle": {
+          "niveles": {
+            "principiante": "Frases simples",
+            "intermedio": "Diálogos cortos",
+            "avanzado": "Entrevistas o noticias"
+          },
+          "tipos_de_preguntas": [
+            "Contexto general: ¿Dónde ocurre la escena? ¿Quién habla?",
+            "Palabras clave: ¿Qué palabra escuchaste relacionada con 'viaje'?",
+            "Detalle específico: ¿Qué número, fecha o acción se mencionó?"
+          ]
+        },
+        "tools": [
+          {
+            "nombre": "generate_audio",
+            "descripcion": "Genera audios personalizados a partir de texto usando TTS adaptado al nivel del usuario."
+          },
+          {
+            "nombre": "generate_comprehension_questions",
+            "descripcion": "Genera preguntas de comprensión (contexto, palabras clave, detalles específicos) basadas en el audio."
+          },
+          {
+            "nombre": "evaluate_answers",
+            "descripcion": "Evalúa las respuestas del usuario contra las respuestas esperadas y entrega retroalimentación."
+          }
+        ]
+      },
+      {
+        "id": "3.2",
+        "nombre": "Ejercicios de Detección de Palabras Clave",
+        "descripcion": "El usuario identifica palabras clave dentro de un audio.",
+        "detalle": {
+          "mecanica": "Se presenta una lista de palabras antes del audio. El usuario debe identificar cuáles escuchó y en qué contexto."
+        },
+        "tools": [
+          {
+            "nombre": "generate_audio",
+            "descripcion": "Genera un audio que contiene las palabras objetivo."
+          },
+          {
+            "nombre": "generate_wordlist",
+            "descripcion": "Genera la lista de palabras clave que el usuario debe identificar en el audio."
+          },
+          {
+            "nombre": "check_word_detection",
+            "descripcion": "Verifica qué palabras fueron correctamente identificadas por el usuario."
+          }
+        ]
+      },
+      {
+        "id": "3.3",
+        "nombre": "Recomendación de Recursos Externos (futuro)",
+        "descripcion": "Recomendación automática de podcasts y episodios relevantes.",
+        "detalle": {
+          "integracion": [
+            "Spotify",
+            "Apple Podcasts",
+            "YouTube"
+          ],
+          "criterios": [
+            "Nivel del usuario",
+            "Preferencias temáticas"
+          ]
+        },
+        "tools": [
+          {
+            "nombre": "recommend_podcasts",
+            "descripcion": "Conecta con APIs externas (Spotify, Apple Podcasts, YouTube) y recomienda episodios relevantes según nivel e intereses del usuario."
+          }
+        ]
+      },
+      {
+        "id": "3.4",
+        "nombre": "Ejercicios Complementarios Sugeridos",
+        "descripcion": "Ejercicios interactivos adicionales para reforzar la comprensión auditiva.",
+        "detalle": {
+          "tipos": [
+            "Ordenar oraciones: el usuario escucha un audio y debe ordenar frases desordenadas.",
+            "Rellenar huecos: escucha un audio con transcripción incompleta y debe completar palabras faltantes.",
+            "Selección múltiple: responde preguntas sobre el contenido del audio."
+          ]
+        },
+        "tools": [
+          {
+            "nombre": "generate_audio",
+            "descripcion": "Genera el audio base del ejercicio."
+          },
+          {
+            "nombre": "generate_ordering_exercise",
+            "descripcion": "Crea un ejercicio de ordenar oraciones basado en un audio."
+          },
+          {
+            "nombre": "generate_fill_in_blanks",
+            "descripcion": "Genera un ejercicio de transcripción incompleta para que el usuario complete palabras faltantes."
+          },
+          {
+            "nombre": "generate_multiple_choice",
+            "descripcion": "Genera preguntas de opción múltiple basadas en el contenido del audio."
+          },
+          {
+            "nombre": "evaluate_answers",
+            "descripcion": "Evalúa las respuestas del usuario y da retroalimentación inmediata."
+          }
+        ]
+      }
+    ]
+  }
+  

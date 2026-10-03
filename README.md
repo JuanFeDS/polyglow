@@ -10,6 +10,7 @@ App para aprender idiomas con sesiones cortas de vocabulario, planes de estudio 
 polyglow/
 ├── frontend/   # App en Expo / React Native (TypeScript, React Navigation)
 ├── backend/    # API en FastAPI con Docker
+├── ia/         # Módulo de listening: agente que genera textos por nivel (A1-C1), audio y transcripción
 └── .github/workflows/
     ├── frontend.yml   # Lint, type check, export web y deploy a GitHub Pages
     └── backend.yml    # Ruff y build de la imagen Docker (GHCR)
